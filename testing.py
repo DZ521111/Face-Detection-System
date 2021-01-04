@@ -14,6 +14,7 @@ test_img = cv2.imread('C:/Users/DHRUV/Desktop/ML projects/Face Recognition Syste
 faces_detect, gray_img = frg.faceDetect(test_img)
 print(faces_detect)
 
+# for loop for each step detection
 for (x, y, w, h) in faces_detect:
     cv2.rectangle(test_img, (x, y), (x+w, y+h), (255, 0, 0), thickness = 5)
     
